@@ -1,16 +1,26 @@
-import turtle, math
+from turtle import *
+import  math
 #turtle.forward(100)
 def cuadrado(l,c):
-    ini=turtle.position()
-    turtle.setpos(ini+(-c/2,c/2))
-    for i in range(4):
-        turtle.forward(c)
-        turtle.right(90)
-    turtle.setpos(ini)
+    ini=position()
+    penup();pensize(4)
+    setpos(ini+(-c/2,-c/2))
+    pendown()
+    for i in range(l):
+        forward(c)
+        left(360/l)
+    penup()
+    setpos(ini)
+    pendown()
+hideturtle()
+#cuadrado(4,100)
 for j in range(4):
-   ini1=turtle.position()
-   turtle.setpos(ini1+(-100/2,100/2))
-   turtle.forward(100)
-   cuadrado(4,50)
-   turtle.right(90)
-   turtle.goto(ini1)
+  # penup()
+   ini1=position()
+   setpos(ini1+(-500/2,-500/2))
+  # pendown()
+   forward(100)
+  # cuadrado(4,100)
+   left(90)
+   #setpos(ini1)
+   break
