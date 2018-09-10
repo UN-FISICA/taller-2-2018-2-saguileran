@@ -30,10 +30,11 @@ lon=100*f
 c=lon
 l=f+2
 pendown()
-#for i in range(3):
-#    forward(lon)
-#    left(120)
-#    if i==1: Pos=position()
+penup()
+for i in range(3):
+    forward(lon)
+    left(120)
+    if i==1: Pos=position()
 pensize(4)
 penup()
 for j in range(f):
@@ -46,8 +47,6 @@ for j in range(f):
                 forward((c/f*(f-j))/(f-(j+1))-(j)*(c/10))
             else:
                 forward((c/f*(f-j))/(f-(j+1))-(j)*(c/20))
-            print((c/f*(f-j))/(f+(j+1)),j)
-            #forward(((c/f*(f-j))/(f-(j+1))-3**(j+1)))
         if k==f-j-2: figura(l-j)
     if j!=f-1:
         if j%2==0:left(120)
