@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-def figura(l):
+# -*- coding: utf-8 -*-
+def figura(l):
     Hini=heading()
     ini=position()
     seth(0)
@@ -16,18 +17,13 @@ from turtle import *
 import math
 penup()
 #numero de casillas
-#hideturtle()
+hideturtle()
 speed(10)
 goto(-200,-200)
 f=int(input('Número de filas del poligono '))
 lon=100*f
 c=lon
 l=f+2
-pendown()
-for i in range(3):
-    forward(lon)
-    left(120)
-    if i==1: Pos=position()
 pensize(4)
 penup()
 r=40
@@ -56,4 +52,3 @@ for j in range(f):
         if j==f-1: 
             goto(Pos)
             figura(l-j)
-     
