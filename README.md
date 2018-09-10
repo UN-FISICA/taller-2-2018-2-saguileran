@@ -26,4 +26,5 @@ Pinta una pirámide de n filas llena de polígonos de m lados, m y n son datos q
 Pinta una pirámide de n filas llena de polígonos de tal modo que en la primera fila (orden descendiente) se crean triángulos, en la segunda cuadrados y asi sucesivamente, en la k-ésima fila se pintaran figuras de k+2 lados. Se ingresan n y este representa el número de filas. Este programa presenta un error y es que a mayor número de filas el espacio entre las figuras disminuye, puede ocurrir que se sobrepongan. Esto ocurre porque la longitud de los lados es constante.
 
 **Ejercicio 6**
+
 Pinta una pirámide de n filas llena de polígonos de tal modo que en la primera fila (orden descendiente) se crean triángulos, en la segunda cuadrados y asi sucesivamente, en la k-ésima fila se pintaran figuras de k+2 lados. Se ingresan n y este representa el número de filas. Este programa ya no presenta el error del ejercicio 5 ya que la longitud de los lados no es constante si no que disminuye cuando aumenta el número de filas.
