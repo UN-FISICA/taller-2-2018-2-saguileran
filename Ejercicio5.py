@@ -22,8 +22,7 @@ def figura(l):
 from turtle import *
 import math
 penup()
-#numero de casillas
-#hideturtle()
+hideturtle()
 speed(10)
 goto(-200,-200)
 f=int(input('Número de filas del poligono '))
@@ -31,10 +30,10 @@ lon=100*f
 c=lon
 l=f+2
 pendown()
-for i in range(3):
-    forward(lon)
-    left(120)
-    if i==1: Pos=position()
+#for i in range(3):
+#    forward(lon)
+#    left(120)
+#    if i==1: Pos=position()
 pensize(4)
 penup()
 for j in range(f):
