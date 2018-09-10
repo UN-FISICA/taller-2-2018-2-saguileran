@@ -12,8 +12,9 @@ def figura(l):
     goto(ini)
 hideturtle()
 pensize(4)
-a,b,l=-1,1,int(input('Enter number of sides: '))
+a,b,l=-1,1,int(input('Número de lados del poligono: '))
 penup()
+speed(10)
 goto(-100,-100)
 for j in range(4):
 	forward(200)
